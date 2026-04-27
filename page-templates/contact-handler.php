@@ -137,6 +137,7 @@ $sent = false;
 
 try {
 	$mail->isSMTP();
+	$mail->CharSet    = 'UTF-8';
 	$mail->Host       = defined('SMTP_HOST')   ? SMTP_HOST   : 'localhost';
 	$mail->SMTPAuth   = true;
 	$mail->Username   = defined('SMTP_USER')   ? SMTP_USER   : $contact_email;
