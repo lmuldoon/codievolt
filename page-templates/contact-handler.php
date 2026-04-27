@@ -109,7 +109,19 @@ if (!empty($errors)) {
 	exit;
 }
 
-// ─── SEND EMAIL ────────────────────────────────────────────────────────────────
+// ─── SEND EMAIL (PHPMailer via SMTP) ───────────────────────────────────────────
+
+$autoloader = ABS_PATH . 'vendor/autoload.php';
+if (!file_exists($autoloader)) {
+	header('Content-Type: application/json');
+	http_response_code(500);
+	echo json_encode(['success' => false, 'errors' => ['Mail system not configured. Please email us directly.']]);
+	exit;
+}
+require_once $autoloader;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 $subject_labels = [
 	'web-design'  => 'Web Design & Build',
@@ -117,30 +129,45 @@ $subject_labels = [
 	'other'       => 'Other',
 ];
 
-$subject_label   = $subject_labels[$subject] ?? $subject;
-$email_subject   = 'Codievolt enquiry' . ($subject_label ? ' — ' . $subject_label : '');
-$email_body      = implode("\n", [
-	"Name:    {$name}",
-	"Email:   {$email}",
-	"Topic:   {$subject_label}",
-	"",
-	"Message:",
-	$message,
-	"",
-	"---",
-	"Sent from codievolt.com contact form",
-	"IP: " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown'),
-	"Time: " . date('Y-m-d H:i:s T'),
-]);
+$subject_label = $subject_labels[$subject] ?? $subject;
+$email_subject = 'Codievolt enquiry' . ($subject_label ? ' — ' . $subject_label : '');
 
-$email_headers = implode("\r\n", [
-	'From: Codievolt Contact <noreply@codievolt.com>',
-	"Reply-To: {$name} <{$email}>",
-	'Content-Type: text/plain; charset=UTF-8',
-	'X-Mailer: PHP/' . PHP_VERSION,
-]);
+$mail = new PHPMailer(true);
+$sent = false;
 
-$sent = mail($contact_email, $email_subject, $email_body, $email_headers);
+try {
+	$mail->isSMTP();
+	$mail->Host       = defined('SMTP_HOST')   ? SMTP_HOST   : 'localhost';
+	$mail->SMTPAuth   = true;
+	$mail->Username   = defined('SMTP_USER')   ? SMTP_USER   : $contact_email;
+	$mail->Password   = defined('SMTP_PASS')   ? SMTP_PASS   : '';
+	$mail->SMTPSecure = defined('SMTP_SECURE') ? SMTP_SECURE : PHPMailer::ENCRYPTION_SMTPS;
+	$mail->Port       = defined('SMTP_PORT')   ? SMTP_PORT   : 465;
+
+	$mail->setFrom(defined('SMTP_USER') ? SMTP_USER : $contact_email, 'Codievolt');
+	$mail->addAddress($contact_email);
+	$mail->addReplyTo($email, $name);
+
+	$mail->Subject = $email_subject;
+	$mail->Body    = implode("\n", [
+		"Name:    {$name}",
+		"Email:   {$email}",
+		"Topic:   {$subject_label}",
+		"",
+		"Message:",
+		$message,
+		"",
+		"---",
+		"Sent from codievolt.com contact form",
+		"IP: " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown'),
+		"Time: " . date('Y-m-d H:i:s T'),
+	]);
+
+	$mail->send();
+	$sent = true;
+} catch (Exception $e) {
+	$sent = false;
+}
 
 // ─── RESPOND ───────────────────────────────────────────────────────────────────
 
@@ -152,7 +179,7 @@ if ($sent) {
 	http_response_code(500);
 	echo json_encode([
 		'success' => false,
-		'errors'  => ['There was a problem sending your message. Please email us directly.'],
+		'errors'  => ['There was a problem sending your message. Please email us directly at info@codievolt.com'],
 	]);
 }
 

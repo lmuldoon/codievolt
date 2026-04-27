@@ -1,0 +1,16 @@
+# Secret keys — never commit
+includes/config.php
+
+# Dependencies
+vendor/
+node_modules/
+
+# Build output (compiled from assets/src — rebuild on server if needed)
+assets/build/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-workspace
