@@ -124,9 +124,10 @@ function animateHero() {
 
 	// ── Eyebrow ───────────────────────────────────────────────────────────────
 	if (eyebrow) {
-		gsap.from(eyebrow, {
-			opacity: 0,
-			y: 18,
+		gsap.set(eyebrow, { opacity: 0, y: 18 });
+		gsap.to(eyebrow, {
+			opacity: 1,
+			y: 0,
 			duration: 0.6,
 			ease: 'power2.out',
 			delay: 0.25
@@ -135,9 +136,10 @@ function animateHero() {
 
 	// ── Sub-heading ───────────────────────────────────────────────────────────
 	if (sub) {
-		gsap.from(sub, {
-			opacity: 0,
-			y: 22,
+		gsap.set(sub, { opacity: 0, y: 22 });
+		gsap.to(sub, {
+			opacity: 1,
+			y: 0,
 			duration: 0.7,
 			ease: 'power2.out',
 			delay: 0.85
@@ -146,9 +148,10 @@ function animateHero() {
 
 	// ── CTA buttons ───────────────────────────────────────────────────────────
 	if (actions) {
-		gsap.from(actions.children, {
-			opacity: 0,
-			y: 16,
+		gsap.set(actions.children, { opacity: 0, y: 16 });
+		gsap.to(actions.children, {
+			opacity: 1,
+			y: 0,
 			stagger: 0.1,
 			duration: 0.6,
 			ease: 'power2.out',
