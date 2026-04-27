@@ -15,11 +15,10 @@ get_header();
 
 <article>
 
-	<div class="sections-header section bg-darkblue">
+	<div class="sections-header section">
 		<div class="container">
 			<div class="animated-up">
 				<h1 class="text-white">Terms &amp; Privacy Policy</h1>
-				<p style="color: rgba(255,255,255,0.75);">Last updated: April 2025</p>
 			</div>
 		</div>
 	</div>
