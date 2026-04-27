@@ -1,0 +1,16 @@
+.section {
+    padding-inline: 0;
+
+    padding-block:var(--section-padding); 
+    position: relative;
+    overflow: hidden;
+
+}
+
+.sections-header {
+	padding-top: calc(var(--header-height, 80px) + 3rem) !important;
+padding-bottom: calc(0.75 * var(--section-padding)) !important;
+	h1 {
+		margin-bottom: 0.5rem;
+	}
+}
