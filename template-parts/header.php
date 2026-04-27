@@ -20,7 +20,7 @@ global $meta;
 	$IS_LIVE = preg_match($re, $_SERVER['SERVER_NAME']);
 	?>
 	<?php if ($IS_LIVE) { ?>
-		<script src="https://cdn.cookiehub.eu/c2/a7951233.js"></script>
+		<script src="https://cdn.cookiehub.eu/c2/5319da8c.js"></script>
 		<script type="text/javascript">
 			window.dataLayer = window.dataLayer || [];
 
@@ -73,15 +73,13 @@ global $meta;
 
 	<?php if ($IS_LIVE) { ?>
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTDHMMKFTJ"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3PM0NDTPW"></script>
 		<script>
-			window.dataLayer = window.dataLayer || [];
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'G-TTDHMMKFTJ');
+		gtag('config', 'G-Y3PM0NDTPW');
 		</script>
 	<?php } ?>
 </head>
