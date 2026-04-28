@@ -96,7 +96,7 @@
 	font-weight: 600;
 	letter-spacing: 0.07em;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .product-status {
@@ -142,7 +142,7 @@
 .product-card__cta {
 	font-size: var(--size-400);
 	font-weight: 600;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.6);
 	transition: color 0.2s ease;
 
 	&--muted {
@@ -242,7 +242,7 @@
 	}
 
 	p {
-		color: rgba(255, 255, 255, 0.5);
+		color: rgba(255, 255, 255, 0.6);
 		font-size: var(--size-400);
 		line-height: 1.7;
 		margin: 0;

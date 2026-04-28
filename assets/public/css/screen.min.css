@@ -20355,7 +20355,7 @@ iframe.wait-autoplay {
 }
 
 .not-found__sub {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.55);
   font-size: var(--size-500);
   line-height: 1.7;
   margin-bottom: 2.5rem;
@@ -20546,7 +20546,7 @@ iframe.wait-autoplay {
 .button--ghost-light:hover {
   background-color: rgba(255, 255, 255, 0.08);
   color: var(--color-white);
-  border-color: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
 .button--ghost-light:hover svg {
@@ -20682,7 +20682,7 @@ iframe.wait-autoplay {
 }
 
 .contact-facts li {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.55);
   font-size: var(--size-400);
   padding: 0.6em 0 0.6em 1.75em !important;
   margin: 0 !important;
@@ -21193,7 +21193,7 @@ textarea.form-field__input {
 }
 
 .chrome-title {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.55);
   font-size: var(--size-300);
   letter-spacing: 0.02em;
 }
@@ -21786,7 +21786,7 @@ textarea.form-field__input {
 }
 
 .hero__sub {
-  color: rgba(255, 255, 255, 0.52);
+  color: rgba(255, 255, 255, 0.6);
   font-size: var(--size-500);
   max-width: 620px;
   line-height: 1.8;
@@ -21857,7 +21857,7 @@ textarea.form-field__input {
 
 .hero-marquee__item {
   font-size: var(--size-300);
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.55);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 600;
@@ -22010,7 +22010,7 @@ textarea.form-field__input {
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .product-status {
@@ -22062,7 +22062,7 @@ textarea.form-field__input {
 .product-card__cta {
   font-size: var(--size-400);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
@@ -22176,7 +22176,7 @@ textarea.form-field__input {
 }
 
 .capability__body p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   font-size: var(--size-400);
   line-height: 1.7;
   margin: 0;
@@ -22205,13 +22205,13 @@ textarea.form-field__input {
 .site-footer {
   width: 100%;
   background: #000;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   padding-block: clamp(3.5rem, 5vw, 6rem) clamp(2rem, 3vw, 3rem);
   border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .site-footer a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   transition: color 0.15s ease;
@@ -22253,7 +22253,7 @@ textarea.form-field__input {
 
 .site-footer__tagline {
   font-size: var(--size-300);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   margin: 0;
 }
 
@@ -22262,7 +22262,7 @@ textarea.form-field__input {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 1rem;
 }
 
@@ -22336,7 +22336,7 @@ textarea.form-field__input {
           justify-content: center;
   -webkit-transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
   transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-social a:hover {
@@ -22774,7 +22774,7 @@ textarea.form-field__input {
   border-radius: 99px;
   padding: 0.15em 0.65em;
   background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -22880,9 +22880,9 @@ textarea.form-field__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 0.875rem;
   padding: 0.75rem 0.875rem;
   border-radius: 10px;
@@ -22960,7 +22960,7 @@ textarea.form-field__input {
 
 .site-dropdown__item-desc {
   font-size: var(--size-300);
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.3;
 }
 
