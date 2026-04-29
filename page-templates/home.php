@@ -24,7 +24,7 @@ get_header();
 
 	<!-- Lightning bolt — right side -->
 	<div class="hero-lightning hero-lightning--right" id="js-lightning-right" aria-hidden="true">
-		<svg class="hero-lightning__svg" viewBox="0 0 460 900" xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMaxYMid meet">
+		<svg class="hero-lightning__svg" viewBox="0 0 460 900" xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMaxYMin meet">
 			<defs>
 				<filter id="bgs-r" x="-80%" y="-5%" width="260%" height="110%">
 					<feGaussianBlur in="SourceGraphic" stdDeviation="12"/>
@@ -53,7 +53,7 @@ get_header();
 
 	<!-- Lightning bolt — left side (mirrored) -->
 	<div class="hero-lightning hero-lightning--left" id="js-lightning-left" aria-hidden="true">
-		<svg class="hero-lightning__svg" viewBox="0 0 460 900" xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMaxYMid meet">
+		<svg class="hero-lightning__svg" viewBox="0 0 460 900" xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMaxYMin meet">
 			<defs>
 				<filter id="bgs-l" x="-80%" y="-5%" width="260%" height="110%">
 					<feGaussianBlur in="SourceGraphic" stdDeviation="12"/>

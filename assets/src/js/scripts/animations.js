@@ -297,7 +297,7 @@ function initLightningStrikes() {
 	if (!rightEl || !leftEl) return;
 
 	// Only run on lg+ (bolts are display:none below that breakpoint)
-	if (window.matchMedia('(max-width: 1023px)').matches) return;
+	//if (window.matchMedia('(max-width: 946px)').matches) return;
 
 	let nextSide = 0; // 0 = right, 1 = left
 
