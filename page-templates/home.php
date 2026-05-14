@@ -173,18 +173,17 @@ get_header();
 					</div>
 				</a>
 
-				<!-- clientflow — coming soon -->
-				<div class="product-card product-card--soon">
+				<!-- clientflow -->
+				<a class="product-card" href="https://wpclientflow.co.uk" target="_blank" rel="noopener">
 					<div class="product-card__meta">
-						<span class="product-status product-status--soon">Coming soon</span>
 						<span class="product-card__type">WordPress Plugin</span>
 					</div>
 					<h3 class="product-card__name">clientflow</h3>
 					<p class="product-card__desc">A WordPress plugin for managing clients and projects. Proposals, invoices, file sharing and project timelines — built into WordPress, where your work already lives.</p>
 					<div class="product-card__footer">
-						<span class="product-card__cta product-card__cta--muted">In development</span>
+						<span class="product-card__cta">Visit wpclientflow.co.uk →</span>
 					</div>
-				</div>
+				</a>
 
 			</div>
 

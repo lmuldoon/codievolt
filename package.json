@@ -117,7 +117,7 @@
     "webpack-cli": "^4.3.1",
     "webpack-fix-style-only-entries": "^0.6.1",
     "webpack-manifest-plugin": "^4.1.1",
-    "webpackbar": "^5.0.0-3",
+    "webpackbar": "^7.0.0",
     "wp-pot-cli": "^1.5.0"
   },
   "keywords": [

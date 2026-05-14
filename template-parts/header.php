@@ -130,16 +130,15 @@ $is_single_page = strpos($meta->slug, 'news/') === 0;
 										</a>
 									</li>
 									<li role="none">
-										<span class="site-dropdown__item is-disabled" role="menuitem" aria-disabled="true">
-											<span class="site-dropdown__item-icon" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+										<a class="site-dropdown__item" href="https://wpclientflow.co.uk" target="_blank" rel="noopener" role="menuitem">
+											<span class="site-dropdown__item-icon site-dropdown__item-icon--svg" aria-hidden="true">
+												<?php include_asset('static/clientflow-icon.svg'); ?>
 											</span>
 											<span class="site-dropdown__item-body">
 												<span class="site-dropdown__item-name">clientflow</span>
 												<span class="site-dropdown__item-desc">Client &amp; project management for WordPress</span>
 											</span>
-											<span class="site-dropdown__badge">Soon</span>
-										</span>
+										</a>
 									</li>
 								</ul>
 							</li>
@@ -180,10 +179,9 @@ $is_single_page = strpos($meta->slug, 'news/') === 0;
 						</a>
 					</li>
 					<li>
-						<span class="mobile-sub__link mobile-sub__link--disabled">
+						<a class="mobile-sub__link" href="https://wpclientflow.co.uk" target="_blank" rel="noopener">
 							clientflow
-							<span class="mobile-sub__badge">Soon</span>
-						</span>
+						</a>
 					</li>
 				</ul>
 			</li>
