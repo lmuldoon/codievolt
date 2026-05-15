@@ -135,7 +135,7 @@ $is_single_page = strpos($meta->slug, 'news/') === 0;
 												<?php include_asset('static/clientflow-icon.svg'); ?>
 											</span>
 											<span class="site-dropdown__item-body">
-												<span class="site-dropdown__item-name">clientflow</span>
+												<span class="site-dropdown__item-name">ClientFlow</span>
 												<span class="site-dropdown__item-desc">Client &amp; project management for WordPress</span>
 											</span>
 										</a>

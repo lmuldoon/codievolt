@@ -43,9 +43,7 @@ global $meta;
 							<a href="https://wpmailblox.com" target="_blank" rel="noopener">wp mailblox</a>
 						</li>
 						<li>
-							<span style="color: rgba(255,255,255,0.3); cursor: default;">
-								clientflow <span class="footer-soon">Soon</span>
-							</span>
+							<a href="https://wpclientflow.co.uk" target="_blank" rel="noopener">ClientFlow</a>
 						</li>
 					</ul>
 

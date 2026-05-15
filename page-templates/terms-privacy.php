@@ -30,7 +30,7 @@ get_header();
 				<h2>Terms of Use</h2>
 
 				<h3>About Codievolt</h3>
-				<p>Codievolt is a digital products and web services company. We build purposeful websites for clients and develop our own software products, including <a href="https://wpmailblox.com" target="_blank" rel="noopener">wp mailblox</a> and clientflow.</p>
+				<p>Codievolt is a digital products and web services company. We build purposeful websites for clients and develop our own software products, including <a href="https://wpmailblox.com" target="_blank" rel="noopener">wp mailblox</a> and ClientFlow.</p>
 
 				<h3>Use of this website</h3>
 				<p>By accessing codievolt.com you agree to use it lawfully and in a manner that does not infringe the rights of others. You must not attempt to gain unauthorised access to any part of the site or its underlying infrastructure, transmit malicious code, or use automated means to scrape or harvest content.</p>
@@ -40,7 +40,7 @@ get_header();
 
 				<h3>Our products</h3>
 				<p><strong>wp mailblox</strong> — a Gutenberg-native email builder for WordPress — has its own terms of use and privacy policy published at <a href="https://wpmailblox.com" target="_blank" rel="noopener">wpmailblox.com</a>. Use of the plugin is governed by those terms.</p>
-				<p><strong>clientflow</strong> is currently in development. Terms will be published upon release.</p>
+				<p><strong>ClientFlow</strong> — a WordPress plugin for managing clients and projects — has its own terms of use and privacy policy published at <a href="https://wpclientflow.co.uk" target="_blank" rel="noopener">wpclientflow.co.uk</a>. Use of the plugin is governed by those terms.</p>
 
 				<h3>Intellectual property</h3>
 				<p>All content on codievolt.com — including text, design, graphics, and code — is the property of Codievolt unless otherwise stated. You may not reproduce or redistribute any part of this site without prior written permission.</p>
@@ -72,7 +72,7 @@ get_header();
 				<p>Our contact form uses <strong>Google reCAPTCHA v3</strong> to detect automated submissions. reCAPTCHA collects hardware and software information and sends it to Google for analysis. Use of reCAPTCHA is subject to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a>.</p>
 
 				<h3>Third-party links</h3>
-				<p>This site contains links to third-party websites, including wpmailblox.com and our email service integrations. We are not responsible for the content or privacy practices of those sites.</p>
+				<p>This site contains links to third-party websites, including wpmailblox.com, wpclientflow.co.uk, and our email service integrations. We are not responsible for the content or privacy practices of those sites.</p>
 
 				<h3>Changes to this policy</h3>
 				<p>We may update these terms and this privacy policy from time to time. The date at the top of this page reflects the most recent revision. Continued use of the site after any changes constitutes acceptance of the updated terms.</p>
